@@ -39,3 +39,49 @@
     padding: 2rem;
     width:40%;
 }
+
+
+/* MAIN */
+main{
+    background-color: rgb(5 10 48);
+}
+
+.section-1{
+    color: white;
+    /* border: 1px solid red; */
+    height: 630px;
+    display: flex;
+    justify-content: space-between;
+    /* padding: 4rem; */
+    width: calc(100% - 14rem); /* Subtract padding from both sides */
+    max-width: 100%; /* Ensure it doesn't exceed the viewport width */
+    margin: 0 auto; /* Center the section horizontally */
+    box-sizing: border-box; /* Include padding and border in the width calculation */
+    /* border: 1px solid red; */
+}
+
+
+.section-1 h1{
+    font-size: 6.9rem;
+    margin-bottom: -.6rem;
+    
+}
+.section-1 h3{
+    font-size: 1.6rem;margin-bottom: .3rem;
+    margin-bottom: .6rem;
+}
+
+.main-content{
+    align-items:center;
+    align-items: center;
+    display: flex;
+    /* border: 1px solid red; */
+}
+
+
+.section-1 img{
+    height: 1340%;
+    width: 100%;
+    width: 100%;
+    height: 100%;
+}
