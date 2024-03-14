@@ -1,7 +1,8 @@
 *{
     margin: 0;
     padding: 0;
-    
+    scroll-behavior: smooth;
+      
 }
 
  /* HEADER */
@@ -44,9 +45,11 @@
     width:40%;
 }
 
-
+.break{
+    color:  rgb(5 10 48);
+}
 /* MAIN */
-main{
+.hero-section{
     background-color: rgb(5 10 48);
 }
 
@@ -71,8 +74,6 @@ main{
 .section-1 h1{
     font-size: 6.9rem;
     margin-bottom: -.6rem;
-    
-    
 }
 
 .section-1 h3{
@@ -126,5 +127,56 @@ main{
     
     font-size: 1.4rem;
     text-align: justify;
+}
+
+/* -------------------section 3------------------- */
+
+.member{
+    background-color: whitesmoke;
+    color: rgb(5 10 48);
+    height: auto;
+
+}
+
+.member-info{
+    /* border: 1px solid red; */
+    display: flex;
+    max-width: 100%; 
+    box-sizing: border-box; 
+    margin: 4em;
+    gap: 3rem;    
+    padding: 5rem;
+   margin-top: 4rem;
+}
+
+.member-image{
+    width: 80%;
+    height: 20rem;
+    /* border: 1px solid red; */
+    
+}
+
+.member-image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 2em;
+}
+
+.member-content{
+
+    padding: 3rem;
+    border: 1px solid rgb(5 10 48);;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border-radius: 2em;
+}
+
+.member-content h1{
+    text-align: center;
+}
+
+.member-content p{
+    justify-content: center;
 }
 
