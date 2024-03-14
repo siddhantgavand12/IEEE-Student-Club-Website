@@ -1,16 +1,19 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    
 }
 
+ /* HEADER */
 .web-header{
+    font-family: Arial, sans-serif;
     border: 1px solid black;
     display: flex;
     justify-content:space-between ;
-    height: 6rem;
+    height: 5rem;
     background-color: rgb(28 33 68);
-    
+    /* align-items: center; */
+    /* justify-content: center; */
 }
 
 .head-image{
@@ -24,6 +27,7 @@
     /* border: 1px solid red; */
     max-width: 100%;
     height: 100%;
+    margin-left: 4rem;
 }
 
 .web-header a{
@@ -36,7 +40,7 @@
     /* border: 2px solid red; */
     display: flex;
     justify-content: space-around;
-    padding: 2rem;
+    padding: 1.8rem;
     width:40%;
 }
 
@@ -46,13 +50,16 @@ main{
     background-color: rgb(5 10 48);
 }
 
+/* ------------------- section 1 (HERO SECTIOIN)------------------- */
+
 .section-1{
+    font-family: Arial, sans-serif;
     color: white;
     /* border: 1px solid red; */
-    height: 630px;
+    height: auto;
     display: flex;
     justify-content: space-between;
-    /* padding: 4rem; */
+    /* padding: 2.8rem; */
     width: calc(100% - 14rem); /* Subtract padding from both sides */
     max-width: 100%; /* Ensure it doesn't exceed the viewport width */
     margin: 0 auto; /* Center the section horizontally */
@@ -65,7 +72,9 @@ main{
     font-size: 6.9rem;
     margin-bottom: -.6rem;
     
+    
 }
+
 .section-1 h3{
     font-size: 1.6rem;margin-bottom: .3rem;
     margin-bottom: .6rem;
@@ -85,3 +94,37 @@ main{
     width: 100%;
     height: 100%;
 }
+
+/* -------------------section 2------------------- */
+
+.section-2{
+    background-color: whitesmoke;
+    color: rgb(5 10 48);
+    height: auto;
+    padding: 3.4em;
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 14em); 
+    max-width: 100%; 
+    margin: 0 auto; 
+    box-sizing: border-box; 
+    margin-top: 4rem;
+    margin-bottom: 4em;
+    gap: 1.7rem;    
+    border-radius: 1em;
+}
+
+.section-2 h2{
+    margin: -1.4rem;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+}
+
+.section-2 p{
+    
+    font-size: 1.4rem;
+    text-align: justify;
+}
+
