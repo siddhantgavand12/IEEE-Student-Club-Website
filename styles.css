@@ -129,13 +129,13 @@
     text-align: justify;
 }
 
-/* -------------------section 3------------------- */
+/* -------------------section 3 (Member)------------------- */
 
 .member{
     background-color: whitesmoke;
     color: rgb(5 10 48);
     height: auto;
-
+    
 }
 
 .member-info{
@@ -180,3 +180,76 @@
     justify-content: center;
 }
 
+/* Memeber photos card */
+
+.member-main{
+    max-width: 60vw;
+    
+    padding: 2rem 1rem;
+    margin: 0 auto;
+}
+
+.member-main h1{
+    text-align: center;
+    margin-top: -5rem;
+    margin-bottom: 3rem;
+}
+
+.member-container{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(3,1fr);
+}
+
+/* @media (min-width:935px) {
+    .main_container{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (min-width:1380px) {
+    .main_container{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+@media (min-width:1788px) {
+    .main_container{
+        grid-template-columns: repeat(4,1fr);
+    }
+} */
+
+.card-container{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(181, 173, 173);
+    border-radius: 8px;
+}
+
+.card-image-container{
+    position: relative;
+    overflow: hidden;
+    height: 19rem;
+    
+}
+
+.card_imgae{
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    
+}
+
+.card-title-container{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+
+}
+
+.card-container:hover .card_imgae{
+    transform: scale(1.1);
+    transition-duration: 200ms;
+}
