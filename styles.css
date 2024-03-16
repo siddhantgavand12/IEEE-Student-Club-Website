@@ -5,6 +5,8 @@
   /* rgb(5 10 48); */
 }
 
+
+
 /* HEADER */
 .web-header {
   z-index: 999;
@@ -419,7 +421,7 @@
 }
 
 .quick-links-image{
-    color: wheat;
+    color: rgb(255, 251, 166);
     width: 8rem;
     display: flex;
     flex-direction: column;
@@ -474,4 +476,14 @@
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     padding: 1rem;
+}
+
+/* HOWER EFFECT */ 
+
+.quick-links a:hover{
+  color: white;
+}
+
+a:hover{
+  color: gray;
 }
