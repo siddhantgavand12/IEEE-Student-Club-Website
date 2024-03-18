@@ -138,10 +138,11 @@
 .member {
   background-color: whitesmoke;
   color: rgb(5 10 48);
-  height: auto;
+  /* height: auto; */
 }
 
 .member-info {
+  /* height: 80vh; */
   /* border: 1px solid red; */
   display: flex;
   max-width: 100%;
@@ -149,7 +150,7 @@
   margin: 4em;
   gap: 3rem;
   padding: 5rem;
-  margin-top: 4rem;
+  margin-bottom: -13vh;
 }
 
 .member-image {
@@ -192,7 +193,9 @@
   max-width: 80vw;
 
   padding: 2rem 1rem;
-  margin: 0 auto;
+  /* border: 2px solid red; */
+  margin: 30vh auto;
+  margin-bottom: 10vh;
 }
 
 .member-main h1 {
@@ -272,10 +275,19 @@
 .achi-headline {
   text-align: center;
   margin-top: 4rem;
-  font-size: 1.3rem;
+  font-size: 1.3vw;
 }
 
-.achi-cards {
+.achi-cards-section1 {
+  display: flex;
+  /* gap: 2rem; */
+  justify-content: space-around;
+  margin: 1rem;
+  margin-top: 4rem;
+  margin-bottom: 7rem;
+}
+
+.achi-cards-section2{
   display: flex;
   /* gap: 2rem; */
   justify-content: space-around;
@@ -310,6 +322,43 @@
   color: rgb(5 10 48);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* GRANTS */
+.grants {
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 60%;
+  margin: 0 auto;
+  padding: 2vw;
+}
+
+.grants h1 {
+  text-align: center;
+  font-size: 2.7vw;
+  font-weight: bold;
+  margin-bottom: 5vh;
+  color: white;
+}
+
+.grant-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 2vh;
+  margin-bottom: 5vh;
+}
+
+h3 {
+  font-size: 3vh;
+  margin-bottom: 12px;
+}
+
+.grants p {
+  font-weight: bold;
+  font-size: 1.8em;
+  margin-bottom: 1.9vh;
+}
+
+
 
 /* TESTIMONIAL  */
 
@@ -350,6 +399,7 @@
 .test-messages-image{
     height: 9rem;
     width: 9rem;
+    
 }
 
 .test-messages-image img{
@@ -367,7 +417,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 20rem;
+    height: 70vh;
 }
 
 .con{
@@ -375,9 +425,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 60%;
-    text-align:justify
-
+    width: 70%;
+    text-align:justify;
+    margin: 20vh;
+    
 }
 
 .con-heading{
@@ -395,10 +446,11 @@
     font-size: 1.2rem;
     font-style: italic;
     padding: 2rem;
-    width: 90%;
+    width: 95%;
 }
 
 .contact-methods a{
+    /* border: 1px solid red; */
     color: rgb(247, 247, 131);
     text-decoration: none;
 }
@@ -442,7 +494,7 @@
     justify-content: start;
     align-items: center;
     width: 50%;
-    margin-left: 20rem;
+    margin-left: 14vw;
 }
 
 .quick-links-section{
