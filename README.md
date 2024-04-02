@@ -3,7 +3,7 @@
 1. Clone the repository:
 
    ```bash
-   https://github.com/siddhantgavand12/Amazon-Clone.git
+   https://github.com/siddhantgavand12/IEEE-Student-Club.git
 
 ## Live Demo
 
