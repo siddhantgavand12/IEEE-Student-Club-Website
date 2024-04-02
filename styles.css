@@ -5,6 +5,7 @@
   /* rgb(5 10 48); */
 }
 
+
 /* HEADER */
 .web-header {
   z-index: 999;
@@ -52,11 +53,13 @@
 /* MAIN */
 .hero-section {
   background-color: rgb(5 10 48);
+  /* border: 1px solid red; */
 }
 
 /* ------------------- section 1 (HERO SECTIOIN)------------------- */
 
 .section-1 {
+  
   margin-top: 10vh;
   font-family: Arial, sans-serif;
   color: white;
@@ -279,7 +282,7 @@
 .achi-cards-section1 {
   display: flex;
   /* gap: 2rem; */
-  justify-content: space-around;
+  justify-content: space-evenly;
   margin: 1rem;
   margin-top: 4rem;
   margin-bottom: 7rem;
@@ -288,7 +291,7 @@
 .achi-cards-section2{
   display: flex;
   /* gap: 2rem; */
-  justify-content: space-around;
+  justify-content: space-evenly;
   margin: 1rem;
   margin-top: 4rem;
   margin-bottom: 7rem;
@@ -319,6 +322,12 @@
   margin: 1.1rem;
   color: rgb(5 10 48);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.achi-card-info-description{
+  /* border: 1px solid red; */
+  font-size: .89em;
+  font-weight: 600;
 }
 
 /* GRANTS */
