@@ -1,2 +1,4 @@
 Remaining Tasks
  1) changing classes names in acchievements section
+
+ 2) Work on header

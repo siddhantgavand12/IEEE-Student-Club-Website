@@ -5,8 +5,6 @@
   /* rgb(5 10 48); */
 }
 
-
-
 /* HEADER */
 .web-header {
   z-index: 999;
@@ -388,6 +386,7 @@ h3 {
     padding: 2rem;
     
 }
+
 .test-message-box{
     margin-top: -2rem;
     display: flex;
