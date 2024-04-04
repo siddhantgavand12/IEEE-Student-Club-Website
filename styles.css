@@ -2,47 +2,66 @@
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+  /* box-sizing: border-box; */
   /* rgb(5 10 48); */
+}
+
+
+
+body{
+  overflow-x:hidden;
+  /* overflow-y:hidden; */
 }
 
 
 /* HEADER */
 .web-header {
-  z-index: 999;
+  z-index: 1;
   position: fixed;
-  width: 100%;
+  width: 100vw;
   font-family: Arial, sans-serif;
   border: 1px solid black;
   display: flex;
+  /* flex-wrap: wrap; */
   justify-content: space-between;
   height: 5rem;
   background-color: rgb(28 33 68);
-  /* align-items: center; */
-  /* justify-content: center; */
+  /* flex-wrap: wrap; */
 }
 
 .head-image {
-  justify-content: space-around;
+  width: 8%;
+  height: 30%;
+  position: relative;
+  justify-content: center;
   padding: 0.9rem;
 }
 
 .head-image img {
+  /* object-fit: cover; */
+  position:absolute;
   /* border: 1px solid red; */
-  max-width: 100%;
-  height: 100%;
+  /* max-width: 100%; */
+  /* height: 100%; */
   margin-left: 4rem;
+  width: 100%;
+  height: 100%;
 }
 
 .web-header a {
   text-decoration: none;
   color: white;
-  font-size: 1rem;
+  font-size: 110%;
 }
+
+
+
 
 .head-navigation {
   /* border: 2px solid red; */
   display: flex;
   justify-content: space-around;
+  /* flex-wrap: wrap; */
   padding: 1.8rem;
   width: 40%;
 }
@@ -53,30 +72,46 @@
 /* MAIN */
 .hero-section {
   background-color: rgb(5 10 48);
-  /* border: 1px solid red; */
+  border: 1px solid red;
+  
 }
+
+
 
 /* ------------------- section 1 (HERO SECTIOIN)------------------- */
 
+
 .section-1 {
-  
-  margin-top: 10vh;
+  margin: 0 7%;
+  /* margin-top: 1vw; */
   font-family: Arial, sans-serif;
   color: white;
   /* border: 1px solid red; */
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
-  justify-content: space-between;
   /* padding: 2.8rem; */
-  width: calc(100% - 14rem); /* Subtract padding from both sides */
-  max-width: 100%; /* Ensure it doesn't exceed the viewport width */
-  margin: 0 auto; /* Center the section horizontally */
-  box-sizing: border-box; /* Include padding and border in the width calculation */
-  /* border: 1px solid red; */
+  /* width: calc(100% - 14rem); */
+  /* Subtract padding from both sides */
+  /* max-width: 100%; */
+   /* Ensure it doesn't exceed the viewport width */
+   /* margin: 0 auto; */
+   /* Center the section horizontally */
+   /* box-sizing: border-box;  */
+   /* Include padding and border in the width calculation */
+  }
+  
+  .section-1-container{
+    /* margin-left: 3%; */
+
+    margin-top: 7vw;
+    /* border: 1px solid red; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .section-1 h1 {
-  font-size: 6.9rem;
+  font-size: 7.6vw;
   margin-bottom: -0.6rem;
 }
 
@@ -88,18 +123,36 @@
 
 .main-content {
   align-items: center;
-  align-items: center;
   display: flex;
   /* border: 1px solid red; */
 }
 
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0); /* Start at the original position */
+  }
+  50% {
+    transform: translateY(2vw); /* Move downwards */
+  }
+  100% {
+    transform: translateY(0); /* Return to the original position */
+  }
+}
+
 .section-1 img {
-  height: 1340%;
+  animation: moveUpDown 3s ease-in-out infinite;
   width: 100%;
   width: 100%;
   
-  height: 85%;
-  margin-top: 8vh;
+  /* height: 85%; */
+  height: 37vw;
+}
+
+@media (max-width:692px) {
+  .section-1-container{
+    /* border: 1px solid red; */
+    margin-top: 13vh;
+  }
 }
 
 /* -------------------section 2------------------- */
@@ -108,21 +161,22 @@
   background-color: whitesmoke;
   color: rgb(5 10 48);
   height: auto;
-  padding: 3.4em;
+  padding: 3.4vw;
   display: flex;
   flex-direction: column;
-  width: calc(100% - 14em);
+  width: calc(100% - 14vw);
   max-width: 100%;
   margin: 5vh auto;
   box-sizing: border-box;
   margin-top: 7rem;
   margin-bottom: 4em;
-  gap: 1.7rem;
+  gap: 1.7vw;
   border-radius: 1em;
 }
 
 .section-2 h2 {
-  margin: -1.4rem;
+  font-size: 1.8vw;
+  margin: -1.4vw;
   /* border: 1px solid red; */
   display: flex;
   justify-content: center;
@@ -130,8 +184,79 @@
 }
 
 .section-2 p {
-  font-size: 1.4rem;
+  font-size: 1.4vw;
   text-align: justify;
+}
+
+
+@media (min-width: 576px) and (max-width: 766px){
+  .hero-section{
+    border: 1px solid red;
+  }
+  .web-header{
+    font-size: 75%;
+    height: 10%;
+    align-items: center;
+  }
+  .head-image {
+    width: 18%;
+    height: 50%;
+    margin-left: 4rem;
+    padding: 0%;
+  }
+
+  .head-image img{
+    margin: 0;
+  }
+  .section-2 p{
+    font-size: 1.3vw;
+  }
+
+  .section-2 h2{
+  font-size: 1.5vw;
+
+  }
+
+}
+
+@media (max-width:576px) {
+  .hero-section{
+    border: 1px solid green;
+    /* width: 10vw; */
+  }
+  .web-header{
+    font-size: 60%;
+    height: 10%;
+    align-items: center;
+    
+  }
+  .head-image {
+    height: 50%;
+    width: 21%;
+    margin-left: 4rem;
+    padding: 0%;
+
+  }
+  .head-image img{
+    margin: 0;
+  }
+
+  /* SECTION - 2 ADJUSTMENTS */
+
+  /* .section-2{
+    font-weight: 700;
+   
+  }
+  .section-2 p{
+    font-size: 1.6vw;
+  }
+  .section-2 h2{
+    border: 1px solid red;
+    font-size: 1.4vw;
+  } */
+
+
+
 }
 
 /* -------------------section 3 (Member)------------------- */
