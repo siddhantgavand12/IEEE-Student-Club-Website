@@ -189,6 +189,68 @@ body{
 }
 
 
+
+/* -------------------section 3 (Member)------------------- */
+
+.member {
+  background-color: whitesmoke;
+  color: rgb(5 10 48);
+  /* height: auto; */
+}
+
+.maam-info {
+  /* height: 80vh; */
+  /* border: 1px solid red; */
+  display: flex;
+  /* max-width: 100%; */
+  /* box-sizing: border-box; */
+  margin: 4vw;
+  gap: 3vw;
+  padding: 5rem;
+  margin-bottom: -13vh;
+  align-items: center;
+}
+
+.maam-image {
+  width: 100vw;
+  height: 24vw;
+  /* border: 1px solid red; */
+}
+
+.maam-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 2vw;
+}
+
+.maam-content {
+  padding: 3vw;
+  border: 1px solid rgb(5 10 48);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  border-radius: 2vw;
+  font-size: 1.3vw;
+  box-sizing: border-box;
+  height: 24vw;
+}
+
+.maam-content h1 {
+  text-align: center;
+  font-size: 3vw;
+  margin-top: -2rem;
+  margin-bottom: 2vw;
+}
+
+.maam-content p {
+
+  font-size: 1.5vw;
+  justify-content: center;
+}
+
+
 @media (min-width: 576px) and (max-width: 766px){
   .hero-section{
     border: 1px solid red;
@@ -214,16 +276,16 @@ body{
 
   .section-2 h2{
   font-size: 1.5vw;
+  border: 1px solid green;
 
   }
 
 }
 
 @media (max-width:576px) {
-  .hero-section{
-    border: 1px solid green;
-    /* width: 10vw; */
-  }
+  /* .hero-section{
+    width: 10vw;
+  } */
   .web-header{
     font-size: 60%;
     height: 10%;
@@ -243,73 +305,33 @@ body{
 
   /* SECTION - 2 ADJUSTMENTS */
 
+
   /* .section-2{
     font-weight: 700;
    
-  }
+  }*/
   .section-2 p{
-    font-size: 1.6vw;
+    font-size: 2.3vw;
   }
   .section-2 h2{
     border: 1px solid red;
-    font-size: 1.4vw;
-  } */
+    font-size: 1.9vw;
+  } 
 
+  .maam-info{
+    transform: scale(1.4);
+  }
 
+  .maam-content-container h1{
+    font-size: 2vw;
+    border: 1px solid red;
+    margin-top: 1.2vw;
+  }
 
-}
+  .maam-content-container p{
+    font-size: 1.3vw;
+  }
 
-/* -------------------section 3 (Member)------------------- */
-
-.member {
-  background-color: whitesmoke;
-  color: rgb(5 10 48);
-  /* height: auto; */
-}
-
-.member-info {
-  /* height: 80vh; */
-  /* border: 1px solid red; */
-  display: flex;
-  max-width: 100%;
-  box-sizing: border-box;
-  margin: 4em;
-  gap: 3rem;
-  padding: 5rem;
-  margin-bottom: -13vh;
-}
-
-.member-image {
-  width: 100%;
-  height: 20rem;
-  /* border: 1px solid red; */
-}
-
-.member-image img {
-  width: 100%;
-  height: 100%;
-  border-radius: 2em;
-}
-
-.member-content {
-  padding: 3rem;
-  border: 1px solid rgb(5 10 48);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 2rem;
-  border-radius: 2em;
-  font-size: 1.3rem;
-}
-
-.member-content h1 {
-  text-align: center;
-  margin-top: -2rem;
-}
-
-.member-content p {
-  justify-content: center;
 }
 
 /* Memeber photos card */
@@ -334,6 +356,7 @@ body{
   display: grid;
   gap: 9rem;
   grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
 
 /* @media (min-width:935px) {
