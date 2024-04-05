@@ -72,7 +72,7 @@ body{
 /* MAIN */
 .hero-section {
   background-color: rgb(5 10 48);
-  border: 1px solid red;
+  /* border: 1px solid red; */
   
 }
 
@@ -188,7 +188,10 @@ body{
   text-align: justify;
 }
 
-
+.para1,.para2,.para3,.para4,.para5{
+    /* border: 1px solid red; */
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
 /* -------------------section 3 (Member)------------------- */
 
@@ -408,9 +411,9 @@ body{
     width: 100vw;
     overflow-x: hidden;
   }
-  .hero-section{
+  /* .hero-section{
     border: 1px solid red;
-  }
+  } */
   .web-header{
     font-size: 75%;
     height: 10%;
@@ -517,7 +520,7 @@ body{
     font-size: 2.3vw;
   }
   .section-2 h2{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     font-size: 1.9vw;
   } 
 
@@ -527,7 +530,7 @@ body{
 
   .maam-content-container h1{
     font-size: 2vw;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin-top: 1.2vw;
   }
 
@@ -607,7 +610,11 @@ body{
     /* border: 1px solid red; */
     /* font-size: 8%; */
     /* transform:scaleY(1.4); */
-    font-weight: 1000;
+    font-weight: 500;
+  }
+
+  .heading1{
+    margin: 2vh 0;
   }
 
   .section-2 p{
@@ -681,6 +688,7 @@ body{
   #grants-heading{
     /* border: 1px solid red; */
     font-size: 6vw;
+    margin-top: -5vh;
   }
 
   .grant-card{
